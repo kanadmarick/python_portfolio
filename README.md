@@ -1,4 +1,4 @@
-# Local Agentic AI
+# Local_Agentic_AL
 
 This repository provides a **fully local agentic AI development environment**: offline code completion, autonomous refactoring helpers, documentation generation, and future semantic/code-search powered planning— all running on local Large Language Models (LLMs) with no external API calls.
 
