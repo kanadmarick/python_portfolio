@@ -1,5 +1,15 @@
 # Local_Agentic_AL
 
+<p align="left">
+	<a href="https://github.com/kanadmarick/Local_Agentic_AL"><img src="https://img.shields.io/badge/Mode-100%25%20Local-4B8BF5" alt="Local Only" /></a>
+	<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green" alt="MIT License" /></a>
+	<img src="https://img.shields.io/badge/Models-DeepSeek%206.7B%20%2B%20Qwen%201.5B-orange" alt="Models" />
+	<img src="https://img.shields.io/badge/Agentic-Planning%20%26%20Refactor%20Roadmap-purple" alt="Agentic Roadmap" />
+	<img src="https://img.shields.io/badge/Offline-Yes-success" alt="Offline" />
+</p>
+
+> Private, offline-first agentic coding environment with dual-model strategy (fast autocomplete + deeper reasoning) and an expanding automation toolkit.
+
 This repository provides a **fully local agentic AI development environment**: offline code completion, autonomous refactoring helpers, documentation generation, and future semantic/code-search powered planning— all running on local Large Language Models (LLMs) with no external API calls.
 
 ---
