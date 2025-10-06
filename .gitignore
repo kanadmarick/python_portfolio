@@ -1,0 +1,34 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+*.egg-info/
+
+# Logs
+logs/
+*.log
+
+# Local AI model artifacts (not typically produced, placeholder)
+model-cache/
+
+# Node
+node_modules/
+
+# Binaries / installers
+OllamaSetup.exe
+VSCodeSetup.exe
+
+# Coverage / test
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Misc
+.cache/

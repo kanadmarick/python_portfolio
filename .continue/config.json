@@ -1,0 +1,74 @@
+{
+  "models": [
+    {
+      "title": "DeepSeek Coder (Reasoning)",
+      "provider": "ollama",
+      "model": "deepseek-coder:6.7b",
+      "apiBase": "http://localhost:11434",
+      "contextLength": 4096,
+      "maxTokens": 2048,
+      "temperature": 0.2,
+      "systemMessage": "You are an expert senior software engineer. Prefer stepwise reasoning internally but output only the final concise answer unless explicitly asked to show thinking."
+    },
+    {
+      "title": "Qwen Coder (Fast)",
+      "provider": "ollama",
+      "model": "qwen2.5-coder:1.5b-base",
+      "apiBase": "http://localhost:11434",
+      "contextLength": 4096,
+      "maxTokens": 1024,
+      "temperature": 0.15,
+      "systemMessage": "You are a fast lightweight code completion model. Return terse, directly usable code snippets."
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Qwen Fast Autocomplete",
+    "provider": "ollama", 
+    "model": "qwen2.5-coder:1.5b-base",
+    "apiBase": "http://localhost:11434",
+    "contextLength": 1536,
+    "maxTokens": 220,
+    "temperature": 0.05
+  },
+  "tabAutocompleteOptions": {
+    "maxPromptTokens": 1500,
+    "prefixPercentage": 0.85,
+    "suffixPercentage": 0.15,
+    "maxSuffixPercentage": 0.25,
+    "debounceDelay": 300,
+    "multilineCompletions": "auto"
+  },
+  "customCommands": [
+    {
+      "name": "test",
+      "description": "Write comprehensive tests for code",
+      "prompt": "Write a comprehensive test for the following code. Include edge cases and ensure good coverage:\n\n{{{ input }}}"
+    },
+    {
+      "name": "optimize",
+      "description": "Optimize code for performance and readability",
+      "prompt": "Optimize the following code for better performance and readability:\n\n{{{ input }}}"
+    },
+    {
+      "name": "explain",
+      "description": "Explain how code works step by step",
+      "prompt": "Explain how this code works step by step:\n\n{{{ input }}}"
+    },
+    {
+      "name": "docstrings",
+      "description": "Add or improve Python docstrings (Google style)",
+      "prompt": "Add or improve comprehensive Google-style docstrings (include Args, Returns, Raises) for the following code. Do not alter logic unless necessary for clarity.\n\n{{{ input }}}"
+    },
+    {
+      "name": "refactor-safe",
+      "description": "Refactor code without changing behavior",
+      "prompt": "Refactor the following code to be more readable, pythonic, and maintainable. Preserve exact behavior and public interfaces. Point out any potential hidden bugs separately at the end.\n\n{{{ input }}}"
+    }
+  ],
+  "allowAnonymousTelemetry": false,
+  "embeddingsProvider": {
+    "provider": "ollama",
+    "model": "nomic-embed-text",
+    "apiBase": "http://localhost:11434"
+  }
+}
