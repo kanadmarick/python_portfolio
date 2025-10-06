@@ -1,4 +1,4 @@
-# Local_Agentic_AL
+# Local_Agentic_AI
 
 <p align="left">
 	<a href="https://github.com/kanadmarick/Local_Agentic_AL"><img src="https://img.shields.io/badge/Mode-100%25%20Local-4B8BF5" alt="Local Only" /></a>
